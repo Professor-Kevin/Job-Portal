@@ -70,6 +70,10 @@ body {
   background-color: var(--mine-shaft-950);
 }
 
+.active{
+  
+}
+
 .profile-img {
   width: 100%;
   max-width: 30px;
