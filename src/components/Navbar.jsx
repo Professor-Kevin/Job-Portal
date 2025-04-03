@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Badge, IconButton, useTheme } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
@@ -13,7 +13,7 @@ export default function Navbar() {
         {/* Left Section - Logo */}
         <div className="d-flex align-items-center">
           <i className="fa-brands fa-pied-piper-alt fs-1 mx-2 text-primary d-none d-md-inline"></i>
-          <NavLink className="navbar-brand fs-2 text-primary" to="#">Job Portal</NavLink>
+          <Link className="navbar-brand fs-2 text-primary" to="#">Job Portal</Link>
         </div>
 
         {/* Center Section - Icons (Centered on Mobile) */}
@@ -53,11 +53,11 @@ export default function Navbar() {
         {/* Navbar NavLinks (Center on Large Screens) */}
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 d-flex gap-3 d-flex  align-items-center justify-content-center">
-            <li className="nav-item"><NavLink className="nav-Navlink text-light" to="/">Home</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-Navlink text-light" to="/findjobs">Find Jobs</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-Navlink text-light" to="/findtalent">Find Talent</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-Navlink text-light" to="/uploadjobs">Upload Jobs</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-Navlink text-light" to="/aboutus">About us</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link text-light" to="/">Home</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link text-light" to="/findjobs">Find Jobs</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link text-light" to="/findtalent">Find Talent</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link text-light" to="/uploadjobs">Upload Jobs</NavLink></li>
+            <li className="nav-item"><NavLink className="nav-link text-light" to="/aboutus">About us</NavLink></li>
           </ul>
         </div>
 

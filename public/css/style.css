@@ -71,7 +71,10 @@ body {
 }
 
 .active{
-  
+  /* background-color: var(--mine-shaft-900); */
+  color: var(--bright-sun-400) !important;
+  /* border-radius: 10%; */
+  display: inline-block;
 }
 
 .profile-img {
